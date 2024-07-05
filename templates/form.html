@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="calculate">
+<h1>Calculation of AVG :</h1>
+
+<form action="{{ url_for('form') }}" method="post">
+  <input type="text" name="maths" placeholder="Math" required>
+  <input type="text" name="science" placeholder="Science" required>
+  <input type="text" name="history" placeholder="History" required>
+  <button type="submit">Submit</button>
+</form>
+<br>
+The AVG marks is: {{ score }}
+<br>
+
+</div>
+
+</body>
+</html>
